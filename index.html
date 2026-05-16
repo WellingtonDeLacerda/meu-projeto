@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css" media="screen and (min-width:40rem)">
+    <link rel="shortcut icon" href="assets/images/icone.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/870d21c1e1.js" crossorigin="anonymous"></script>
+    <title>Meu-projeto | Programming</title>
+</head>
+<body>
+  <header>
+      <img src="assets/images/logo-header.png" alt="logo do site" class="logo">
+      <button type="button" class="btn-menu fa-solid fa-bars"></button>
+      <nav class="navoff navbar">
+         <ul>
+            <li class="config-off">
+                <a href="pages/trabalhos.html">trabalhos</a>
+            </li>
+            <li class="config-off">
+                <a href="pages/sobre.html">Sobre</a>
+            </li>
+            <li class="config-on">
+                <a href="pages/contato.html">Contato</a>
+            </li>
+            <li class="config-on">
+                <a href="https://wellingtondelacerda.github.io/meu-portfolio/" target="_blank">Portfólio</a>
+            </li>
+            <li class="config-off">
+                <a href="pages/config.html">Configurações</a>
+            </li>
+         </ul>
+      </nav>
+  </header>
+  <main>
+     <!-- SEÇÃO DE CADASTRO E LOGIN -->
+     <section class="form form-on">
+        <h1>Crie sua conta para ter mais acesso ao site</h1>
+        <!-- PARTE DO CADASTRO -->
+        <form class="cadastro on" method="POST" autocomplete="on" novalidate>
+           <h2>Cadastre-se aqui</h2>
+           <div class="box-input input-normal">
+               <i class="fa-solid fa-user" aria-label="person"></i>
+               <input type="text" name="usuario" id="cad-user" placeholder="Nome do usuario" maxlength="30" required>
+               <i class="fa-solid fa-circle-info ok" aria-label="erro nome"></i>
+           </div>
+           <div class="box-input input-normal">
+               <i class="fa-solid fa-envelope" aria-label="email"></i>
+               <input type="email" name="email" id="cad-email" placeholder="Crie seu e-mail" maxlength="50" required>
+               <i class="fa-solid fa-circle-info ok" aria-label="erro email"></i>
+           </div>
+           <div class="box-input input-normal">
+               <i class="fa-solid fa-key" aria-label="senha"></i>
+               <input type="password" name="senha" id="cad-senha" placeholder="Crie sua senha" maxlength="50" minlength="8" required>
+               <i class="fa-solid fa-circle-info ok" aria-label="erro senha"></i>
+           </div>
+           <button type="submit" class="btn-criar">Criar conta</button>
+           <button type="button" class="btn-next ">Ja possui uma conta ?</button>
+           <!-- PARTE DO LOGIN -->
+        </form>
+        
+        <form class="login off" method="POST" autocomplete="on" novalidate>
+            <h2>Preencha seus dados</h2>
+            <div class="box-input input-normal">
+                <i class="fa-solid fa-envelope" aria-label="email"></i>
+                <input type="email" name="email" id="log-email" placeholder="Digite seu e-mail:" maxlength="50">
+                <i class="fa-solid fa-circle-info ok" aria-label="erro senha"></i>
+            </div>
+            <div class="box-input input-normal">
+                <i class="fa-solid fa-key" aria-label="senha"></i>
+                <input type="password" name="senha" id="log-senha" placeholder="Digite sua senha:" maxlength="50">
+                <i class="fa-solid fa-circle-info ok" aria-label="erro senha"></i>
+            </div>
+            <button type="submit" class="btn-entrar">Entrar na conta</button>
+            <button type="button" class="btn-prev ">Não possui uma conta ?</button>
+        </form>
+     </section>
+     <!-- SEÇÃO DE CONTEUDOS -->
+     <div class="content conteudo-off"> 
+      <section class="sobre">
+         <strong class="tick">Seja bem vindo <span class="your-name">Usuario</span></strong>
+         <h2>Quais ferramentas eu usei para criar este <strong>Landing Pages</strong> ?</h2>
+         <article>
+            
+            <div class="program">
+                <img src="assets/images/icon-html.png" alt="Linguagem de HTML">
+                <div class="txt">
+                    <h3 id="titu1">HTML: A Estrutura</h3>
+                    <p>​O HTML (HyperText Markup Language) é a linguagem de marcação que define a estrutura e o conteúdo de uma página web. 
+Imagine-o como o esqueleto de um prédio: ele determina onde ficam as paredes, as portas e as janelas, mas não cuida da pintura ou da fiação elétrica.<br>
+​Através de tags (como &lt;h1&gt;, &lt;p&gt;, &lt;a&gt; e &lt;img&gt;), o HTML organiza os elementos para que o navegador saiba o que é um título, um parágrafo ou um link. 
+Sem o HTML, a internet seria apenas um amontoado de texto sem ordem ou hierarquia.</p>
+                </div>
+            </div>
+            <div class="program">
+                <img src="assets/images/icon-css.png" alt="Linguagem de CSS">
+                <div class="txt">
+                    <h3 id="titu2">CSS: O Estilo</h3>
+                    <p>O CSS (Cascading Style Sheets) é o que traz vida visual ao projeto.
+Se o HTML é o esqueleto, o CSS é a pintura, o revestimento e a decoração. 
+Ele é responsável por definir cores, fontes, tamanhos, espaçamentos e o layout (disposição dos elementos) na tela.
+​Uma das maiores vantagens do CSS é a separação de conceitos: você pode mudar completamente o visual de um site inteiro editando apenas um arquivo CSS, sem precisar mexer no conteúdo estrutural do HTML. 
+É ele quem garante que o seu site seja bonito e, principalmente, responsivo (que se adapta a celulares e computadores).</p>
+                </div>
+            </div>
+            <div class="program">
+                <img src="assets/images/icon-js.png" alt="Linguagem de javaScript">
+                <div class="txt">
+                    <h3 id="titu3">JavaScript: O Comportamento</h3>
+                    <p>O JavaScript (JS) é a linguagem de programação que adiciona interatividade e dinamismo. 
+Enquanto o HTML estrutura e o CSS embeleza, o JavaScript faz as coisas "acontecerem".
+​É o JS que permite que você clique em um botão e abra um menu lateral, valide um formulário de cadastro em tempo real, ou atualize o feed das suas redes sociais sem precisar recarregar a página. 
+Ele transforma documentos estáticos em aplicações web complexas e inteligentes, sendo hoje uma das linguagens mais poderosas e populares do mundo.</p>
+                </div>
+            </div>
+            
+         </article>
+      </section>
+     <section class="card">
+       <div class="dados-game">
+         <h2>Crie um cartão para ter acesso ao mine jogo de cartas</h2>
+         <form class="game" method="POST">
+            <div class="box-nick">   
+            <h2>Crie seu cartão</h2>
+            <div class="nick-user">
+               <label for="iuser-game" class="fa-regular fa-id-badge" aria-label="nome do jogador"></label>
+               <input type="text" name="userGame" id="iuser-game" placeholder="Nome do jogador:">
+            </div>
+            </div>
+            <div class="box-fav">
+               <h2>Selecione suas categorias favoritas</h2>
+               <div class="element">
+               <label for="fogo">Elemento fogo</label>
+               <input type="checkbox" name="fogo" id="fogo">
+               </div>
+               <div class="element">
+               <label for="agua">Elemento água</label>
+               <input type="checkbox" name="agua" id="agua">
+               </div>
+               <div class="element"> 
+               <label for="terra">Elemento terra</label>
+               <input type="checkbox" name="terra" id="terra">
+               </div>
+               <div class="element">
+               <label for="ar">Elemento ar</label>
+               <input type="checkbox" name="ar" id="ar">
+               </div>
+            </div>
+            <h2>Selecione a dificuldade</h2>
+            <div class="dificult">
+               <label for="facil" class="difoff dif">Facil</label>
+               <label for="normal" class="difon dif">Normal</label>
+               <label for="dificil" class="difoff dif">Dificil</label>
+               <label for="pro" class="difoff dif">Profissional</label>
+               <input type="radio" name="dificuldade" id="facil" value="facil">
+               <input type="radio" name="dificuldade" id="normal" value="normal" checked>
+               <input type="radio" name="dificuldade" id="dificil" value="dificil">
+               <input type="radio" name="dificuldade" id="pro" value="profissional">
+            </div>
+            <button type="submit" class="btn-card">Criar cartão</button>
+         </form>
+       </div>
+     </section>
+     <section class="netmovies">
+         <h2>Maratona Netflix</h2>
+         <ul class="videos">
+             <!-- AQUI FICARÁ OS VIDEOS -->
+         </ul>
+     </section>
+     <section class="mais">
+         
+      </section>
+     </div>
+  </main>
+  <footer>
+      <img src="assets/images/logo-footer.png" alt="logo do footer">
+      <nav class="navbar">
+         <ul>
+            <li class="config-off">
+                <a href="pages/trabalhos.html">trabalhos</a>
+            </li>
+            <li class="config-off">
+                <a href="pages/sobre.html">Sobre</a>
+            </li>
+            <li class="config-on">
+                <a href="pages/contato.html">Contato</a>
+            </li>
+            <li class="config-on">
+                <a href="https://wellingtondelacerda.github.io/meu-portfolio/" target="_blank">Portfólio</a>
+            </li>
+            <li class="config-off">
+                <a href="pages/config.html">Configurações</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="social-link">
+         <a href="https://www.facebook.com/profile.php?id=6157660928145"><i class="fa-brands fa-facebook" aria-label="facebook"></i></a>
+         <a href="https://www.instagram.com/wellington_lacerda.art?igsh=djd5aHYxaDNwbjRn"><i class="fa-brands fa-instagram" aria-label="instagram"></i></a>
+         <a href="https://www.youtube.com/@Wellington-Lacerda-dev"><i class="fa-brands fa-youtube" aria-label="youtube"></i></a>
+         <a href="https://github.com/WellingtonDeLacerda"><i class="fa-brands fa-github" aria-label="github"></i></a>
+      </div>
+  </footer>
+  <script src="assets/js/videos.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

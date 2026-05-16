@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+body{
+    font-family: var(--FF-normal);
+    background:var(--cor-fundo);
+    color: var(--texto-principal);
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+}
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+a.prev {
+    text-decoration: none;
+    color: var(--texto-principal);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.social-link {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.social-link a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--texto-principal);
+}
+.social-link a:hover {
+    color: var(--texto-secundario);
+}
