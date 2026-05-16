@@ -155,7 +155,7 @@ formCad.addEventListener("submit", (e) => {
     else {
         
         const dadosClient = Object.fromEntries(formData)
-        fetch("https://meu-projeto-tmr0.onrender.com", {
+        fetch("https://meu-projeto-tmr0.onrender.com/cadastro", {
             method : 'POST',
             headers : {"Content-Type" : "application/json"},
             body : JSON.stringify(dadosClient)
@@ -207,7 +207,7 @@ formLog.addEventListener("submit", (e) => {
     if (!isValid) return
     const dadosLogin = Object.fromEntries(formData)
 
-    fetch("https://meu-projeto-tmr0.onrender.com", {
+    fetch("https://meu-projeto-tmr0.onrender.com/login", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
